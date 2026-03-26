@@ -28,7 +28,6 @@ Users receive a large number of messages daily, and many are spam. Manually filt
 - **Feature Extraction:** Converts text into numerical vectors using **CountVectorizer**.  
 - **Naive Bayes Algorithm:** **Multinomial Naive Bayes** classifies messages based on word frequency.  
 - **Model Evaluation:** Accuracy, precision, recall, and F1-score measure performance.  
-- **Real-time Deployment:** **Streamlit** interface allows users to input messages and get instant predictions.
 
 ---
 
@@ -39,8 +38,7 @@ Users receive a large number of messages daily, and many are spam. Manually filt
   - CountVectorizer  
   - Multinomial Naive Bayes  
   - train_test_split  
-- **NLTK:** Text preprocessing, removing stop words.  
-- **Streamlit:** Real-time interactive web interface.  
+- **NLTK:** Text preprocessing, removing stop words.    
 - **Dataset:** SMS Spam Collection Dataset (labeled SMS messages as spam or ham).
 
 ---
@@ -52,7 +50,6 @@ Users receive a large number of messages daily, and many are spam. Manually filt
 4. Split data: 80% training, 20% testing.  
 5. Train **Multinomial Naive Bayes** classifier.  
 6. Test the model on unseen messages and evaluate performance.  
-7. Deploy the model with **Streamlit** for real-time message validation.
 
 ---
 ## Setting Up
@@ -83,7 +80,7 @@ pip install pandas scikit-learn
 ### Step 5: Run the Command-Line Program
 
 ```bash
-python spam_cli.py
+python SpamDetection.py
 ```
 
 ### Step 6: Use the Program
@@ -108,7 +105,7 @@ python spam_cli.py
 
 ## Results
 - Accuracy: **98.64%** on test dataset.  
-- Successfully classified both test data and new messages via Streamlit.  
+- Successfully classified both test data
 - Confusion matrix confirmed correct classification of spam and non-spam messages.  
 - Real-time interface allows easy message validation.
 
