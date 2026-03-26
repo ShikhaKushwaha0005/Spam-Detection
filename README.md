@@ -58,18 +58,45 @@ Users receive a large number of messages daily, and many are spam. Manually filt
 ## Setting Up
 
 ### Step 1: Clone the GitHub Repository
-- Copy the repository URL from GitHub.
+
+* Copy the repository URL from GitHub and clone it:
+
+```bash
+git clone <your-repo-link>
+cd <your-repo-folder>
+```
 
 ### Step 2: Set Up Python Environment
-- Ensure Python 3.8+ is installed.
+
+* Ensure Python 3.8+ is installed.
 
 ### Step 3: Install Required Libraries
 
-### Step 4: Add the Dataset
-- Ensure `spam.csv` is in the project folder.
+```bash
+pip install pandas scikit-learn
+```
 
-### Step 5: Run the Streamlit App
-- Enter a message in the text box and click **Validate** to see results.
+### Step 4: Add the Dataset
+
+* Ensure `spam.csv` is in the project folder.
+
+### Step 5: Run the Command-Line Program
+
+```bash
+python spam_cli.py
+```
+
+### Step 6: Use the Program
+
+* Enter a message when prompted
+* The program will display:
+
+  * **Spam**
+  * **Not Spam**
+* Type `exit` to close the program
+
+
+
 
 ## Challenges Faced
 - Cleaning dataset and removing duplicates.  
@@ -80,7 +107,7 @@ Users receive a large number of messages daily, and many are spam. Manually filt
 ---
 
 ## Results
-- Accuracy: **98.45%** on test dataset.  
+- Accuracy: **98.64%** on test dataset.  
 - Successfully classified both test data and new messages via Streamlit.  
 - Confusion matrix confirmed correct classification of spam and non-spam messages.  
 - Real-time interface allows easy message validation.
